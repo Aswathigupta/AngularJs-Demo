@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<body>
+
+<div ng-app="" ng-init="names=[{id : 'PRD1' , name : 'mobile' , price : 10000},
+{id : 'PRD2' , name : 'laptop' , price : 50000},
+{id : 'PRD3' , name : 'tablet' , price : 20000}
+]">
+  <p>Looping with ng-repeat:</p>
+  <ul ng-repeat="x in names"  >
+     <li> {{ x.id}} </li>
+     <li> {{x.name}} </li>
+     <li> {{x.price}} </li>
+    
+  </ul>
+</div>
+
+</body>
+</html>
+
